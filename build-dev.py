@@ -40,8 +40,11 @@ if dir_exists:
                 static_files = file
                 print(DIST_PATH + '\\' + static_files, FLASK_STATIC_PATH + '\\' + static_files)
                 (shutil.move(DIST_PATH + '\\' + static_files, FLASK_STATIC_PATH + '\\' + static_files))
-                if os.path.exists(DIST_PATH + '\\' + static_files):
-                    os.remove(DIST_PATH + '\\' + static_files)
+               try:
+                    if os.path.exists(DIST_PATH + '\\' + static_files):
+                       os.remove(DIST_PATH + '\\' + static_files)
+               except Exception as e1:
+                   print(e1)
             if '.html' in file:
                 html_files = file
                 if os.path.exists(FLASK_TEMPLATES_PATH + '\\' + html_files):
