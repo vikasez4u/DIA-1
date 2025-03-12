@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
+      
       - name: Set up Python version
         uses: actions/setup-python@v5
         with:
@@ -28,10 +28,14 @@ jobs:
         run: |
           python -m venv venv
           source venv/bin/activate
-      
+          
       - name: Install dependencies
         run: pip install -r requirements.txt
-        
+
+      - name: build-Angular
+        run: |
+          python build-dev.py
+          
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
       - name: Zip artifact for deployment
