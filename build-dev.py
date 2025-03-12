@@ -47,21 +47,21 @@ if dir_exists:
                     print('DIST PATH',e1)
             if '.html' in file:
                 html_files = file
-                if os.path.exists(FLASK_TEMPLATES_PATH + '\\' + html_files):
-                  os.remove(FLASK_TEMPLATES_PATH + '\\' + html_files)
-                print(DIST_PATH + '\\' + html_files, FLASK_TEMPLATES_PATH + '\\' + html_files)
-                (shutil.move(DIST_PATH + '\\' + html_files, FLASK_TEMPLATES_PATH + '\\' + html_files))
-                if os.path.exists(DIST_PATH + '\\' + html_files):
-                  os.remove(DIST_PATH + '\\' + html_files)
+                if os.path.exists(FLASK_TEMPLATES_PATH + '/' + html_files):
+                  os.remove(FLASK_TEMPLATES_PATH + '/' + html_files)
+                print(DIST_PATH + '/' + html_files, FLASK_TEMPLATES_PATH + '/' + html_files)
+                (shutil.move(DIST_PATH + '/' + html_files, FLASK_TEMPLATES_PATH + '/' + html_files))
+                if os.path.exists(DIST_PATH + '/' + html_files):
+                  os.remove(DIST_PATH + '/' + html_files)
 
         files = os.listdir(DIST_ASSETS_PATH)
         for file in files:
           if '.js' in file or '.png' in file or '.mp4' in file or '.mov' in file:
             static_files = file
-            print(DIST_ASSETS_PATH + '\\' + static_files, FLASK_STATIC_PATH + '\\' + static_files)
-            (shutil.move(DIST_ASSETS_PATH + '\\' + static_files, FLASK_STATIC_PATH + '\\' + static_files))
-            if os.path.exists(DIST_ASSETS_PATH + '\\' + static_files):
-              os.remove(DIST_ASSETS_PATH + '\\' + static_files)
+            print(DIST_ASSETS_PATH + '/' + static_files, FLASK_STATIC_PATH + '/' + static_files)
+            (shutil.move(DIST_ASSETS_PATH + '/' + static_files, FLASK_STATIC_PATH + '/' + static_files))
+            if os.path.exists(DIST_ASSETS_PATH + '/' + static_files):
+              os.remove(DIST_ASSETS_PATH + '/' + static_files)
     except Exception as e:
         dir_exists = False
         print(e)
