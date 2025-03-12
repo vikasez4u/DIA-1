@@ -5,6 +5,7 @@ import shutil
 
 CURRENT_DIRECTORY = os.getcwd()
 directories = os.listdir(CURRENT_DIRECTORY)
+print(directories)
 NON_ANGULAR_DIRS = ['resources','static', 'templates', 'weights', 'venv', 'env', '__pycache__','uploads','DIA2','.github']
 ANGULAR_PROJECT_PATH = ""
 DIST_PATH = ""
