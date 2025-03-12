@@ -38,8 +38,8 @@ if dir_exists:
         for file in files:
             if '.js' in file or '.js.map' in file or '.ico' in file or '.css' in file or '.jpg' in file or '.woff' in file or '.woff2' in file :
                 static_files = file
-                print(DIST_PATH + '\\' + static_files, FLASK_STATIC_PATH + '\\' + static_files)
-                (shutil.move(DIST_PATH + '\\' + static_files, FLASK_STATIC_PATH + '\\' + static_files))
+                print(DIST_PATH + '/' + static_files, FLASK_STATIC_PATH + '/' + static_files)
+                (shutil.move(DIST_PATH + '/' + static_files, FLASK_STATIC_PATH + '/' + static_files))
                 try:
                     if os.path.exists(DIST_PATH + '/' + static_files):
                        os.remove(DIST_PATH + '/' + static_files)
