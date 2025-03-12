@@ -29,12 +29,44 @@ jobs:
           python -m venv venv
           source venv/bin/activate
           
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+      #- name: Install dependencies
+       # run: pip install -r requirements.txt
 
-      - name: build-Angular
-        run: |
-          python build-dev.py
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20.10.0'
+
+      - name: Install Angular dependencies
+        run: npm install
+        working-directory: ./DIA
+
+      - name: Install Angular CLI
+        run: npm install -g @angular/cli
+        working-directory: ./DIA
+
+      - name: Build Angular project
+        run: python build-dev.py
+        #ng build --prod
+        #working-directory: ./path-to-your-angular-app
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.10'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+        #working-directory: ./path-to-your-flask-app
+
+     # - name: Create build directory
+      #  run: mkdir -p build
+
+      #- name: Copy Angular build to build directory
+       # run: cp -R ./DIA/dist/DIA/* ./build
+
+      #- name: Copy Flask app to build directory
+       # run: cp -R ./path-to-your-flask-app/* ./build
           
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
