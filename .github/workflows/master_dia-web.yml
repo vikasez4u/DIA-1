@@ -45,13 +45,13 @@ jobs:
         run: npm install -g @angular/cli
         working-directory: ./DIA
 
-      - name: Set permissions
-        run: chmod +x build-dev.py
+      #- name: Set permissions
+       # run: chmod +x build-dev.py
   
       - name: Build Angular project
-        run: python build-dev.py
-        #ng build --prod
-        #working-directory: ./path-to-your-angular-app
+        #run: python build-dev.py
+        run: ng build --prod
+        working-directory: ./DIA
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -62,14 +62,14 @@ jobs:
         run: pip install -r requirements.txt
         #working-directory: ./path-to-your-flask-app
 
-     # - name: Create build directory
-      #  run: mkdir -p build
+      - name: Create build directory
+        run: mkdir -p build
 
-      #- name: Copy Angular build to build directory
-       # run: cp -R ./DIA/dist/DIA/* ./build
+      - name: Copy Angular build to build directory
+        run: cp -R ./DIA/dist/DIA/* ./build
 
-      #- name: Copy Flask app to build directory
-       # run: cp -R ./path-to-your-flask-app/* ./build
+      - name: Copy Flask app to build directory
+        run: cp -R ./* ./build
           
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
