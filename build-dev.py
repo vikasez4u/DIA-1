@@ -24,7 +24,7 @@ dir_exists = True
 if dir_exists:
     try:
         subprocess.run(('cd ' + ANGULAR_PROJECT_PATH + ' && ng build --base-href /static/ --output-hashing=all &'), shell=True)
-        time.sleep(10000)
+        time.sleep(80)
         for f in os.listdir(FLASK_STATIC_PATH):
           os.remove(os.path.join(FLASK_STATIC_PATH, f))
         print('Begin Transferring files')
