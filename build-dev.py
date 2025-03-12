@@ -12,7 +12,7 @@ DIST_ASSETS_PATH = ""
 
 for directory in directories:
     if "." not in directory and directory not in NON_ANGULAR_DIRS:
-        ANGULAR_PROJECT_PATH = CURRENT_DIRECTORY
+        ANGULAR_PROJECT_PATH = os.path.join(CURRENT_DIRECTORY,directory)
         print('ANGULAR_PROJECT_PATH',ANGULAR_PROJECT_PATH)
         DIST_PATH = os.path.join(ANGULAR_PROJECT_PATH, 'dist', 'dia')
         DIST_ASSETS_PATH = os.path.join(DIST_PATH, 'assets')
@@ -27,8 +27,11 @@ if dir_exists:
         for f in os.listdir(FLASK_STATIC_PATH):
           os.remove(os.path.join(FLASK_STATIC_PATH, f))
         print('Begin Transferring files')
-        files = os.listdir(DIST_PATH)
-        print('files',files)
+        try:
+            files = os.listdir(DIST_PATH)
+            print('files',files)
+        except Exception as e1:
+            print(e1)
         static_files = ""
         html_files = ""
         for file in files:
