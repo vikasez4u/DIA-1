@@ -1,0 +1,162 @@
+  .progress-container {
+            position: relative;
+            margin: 20px 0;
+            width: 95%;
+        }
+
+        .progress-header {
+            position: absolute;
+            top: -20px;
+            /* Adjust as needed */
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .progress-wrapper {
+            height: 12rem;
+            overflow-y: scroll;
+        }
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 1px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgb(73, 84, 84);
+            border-radius: 1px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgb(73, 84, 84);
+        }
+
+        .rounded-container {
+            border-radius: 15px;
+            /* Rounded corners */
+            padding: 20px;
+            /* Padding inside the container */
+            background-color: #f8f9fa;
+            /* Light background color */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow */
+            margin-top: 20px;
+            /* Margin at the top */
+        }
+
+        .btn-group-toggle .btn {
+            border-radius: 25px;
+            /* Rounded corners for buttons */
+            font-weight: bold;
+            /* Bold text */
+            color: black;
+            /* Black text color */
+        }
+
+        .btn-group-toggle .btn.active {
+            background-color: white;
+            /* Active button background color */
+            color: black;
+            /* Active button text color */
+            margin: 2px;
+        }
+
+        .btn-group-toggle .btn:not(.active) {
+            background-color: transparent;
+            /* Non-active button background */
+        }
+
+        label {
+            font-size: 10px;
+        }
+
+        .card-header {
+
+            background-color: rgb(255, 255, 255)
+        }
+
+        .btn-group {
+        display: flex;
+            border-radius: 25px;
+            border: 1px solid #981fae;
+        }
+
+        .btn-group-toggle .btn {
+                display:flex;
+        justify-content: center;
+            border-radius: 25px;
+            /* Rounded corners for buttons */
+            font-weight: light;
+            /* Bold text */
+            color: black;
+            /* Black text color */
+            font-size: 0.75rem;
+            /* Change this value to adjust font size */
+            align-items: center;
+            border: 2px solid #981fae;
+        }
+
+
+        .btn-group-toggle .btn.active {
+          background-color: #981fae;
+          color: #fff;
+          border: 2px solid #dcafff;
+        }
+
+        .btn-group-toggle .btn:not(.active) {
+            background-color: white;
+            /* Non-active button background */
+            border: 2px solid transparent;
+            /* Non-active button border */
+        }
+
+        .btn {
+            border-radius: 25px;
+            border: 1px solid black;
+        }
+
+        .horizontal-line {
+            border-top: 2px solid #981fae;
+            margin-top: 2rem;
+        }
+
+
+        .card {
+            border: 2px solid #981fae;
+            box-shadow: 5px 5px #dcafff;
+        }
+
+        .float-right {
+            margin: -1rem;
+        }
+
+.mt-5 {
+    margin-top: 3rem !important;
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem !important;
+}
+
+.dropdown-toggle {
+  position: relative;
+  top: -5px;
+}
+
+::ng-deep .modal-content{
+  width: 38rem !important;
+}
+
+::ng-deep .modal-body{
+  overflow: hidden;
+  margin-right: 1rem;
+}

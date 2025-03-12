@@ -1,0 +1,143 @@
+.editable-row-operations a {
+        margin-right: 8px;
+      }
+
+.form-header{
+  flex-direction: row;
+  box-sizing: border-box;
+  /*background-color: #ADBDB6;*/
+  background-color:#fff;
+  color: #061A1E;
+  height: 100%;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: -243px;
+  padding-left: 0px;
+  line-height: 20px;
+  vertical-align: middle;
+  font-size: 16px;
+  font-family: Segoe UI;
+ /* outline: 1px solid #ADBDB6;*/
+
+}
+.form-file-upload{
+  flex-direction: row;
+  /*background-color: #ADBDB6;*/
+  background-color:#fff;
+  color: #061A1E;
+  height: 50px;
+  margin-top: 55px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 10px;
+  padding-right: 0px;
+  line-height: 17px;
+  vertical-align: middle;
+  font-size: 16px;
+  font-family: Segoe UI;
+ /* outline: 0px solid #ADBDB6;*/
+  text-align: left;
+}
+
+.form-file-details{
+  flex-direction: row;
+  box-sizing: border-box;
+   background-color:#fff;
+ /* background-color: #ADBDB6;*/
+  color: #061A1E;
+  height: 100%;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: -243px;
+  padding-left: 0px;
+  line-height: 20px;
+  vertical-align: middle;
+  font-size: 16px;
+  font-family: Segoe UI;
+ /* outline: 1px solid #ADBDB6;*/
+
+}
+
+.form-excel-data{
+  flex-direction: row;
+  box-sizing: border-box;
+   background-color:#fff;
+  /*background-color: #ADBDB6;*/
+  color: #061A1E;
+  height: 100%;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 10px;
+  line-height: 20px;
+  vertical-align: middle;
+  font-size: 16px;
+  font-family: Segoe UI;
+  /*outline: 1px solid #ADBDB6;*/
+  text-align: left;
+}
+
+.bg{
+background: white;
+}
+
+table{
+  border: 1px solid black;
+  border-collapse: separate;
+  border-spacing: 0px;
+  width: 40%;
+}
+
+th{
+  position: sticky;
+  top:0px;
+  /*background-color: burlywood;*/
+}
+
+.table-wrapper{
+  max-height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin:20px;
+}
+
+th, td{
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.outer-wrapper{
+  border: 1px solid black;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 5px;
+}
+
+.btn-primary{
+ /* background-color: #0073cf;*/
+  color: white;
+}
+
+section p{
+  margin-bottom: 0;
+  padding-bottom: 5px;
+}
+
+input#formFileMultiple {
+    width: 30%;
+    margin-right: 20px;
+}
+
+form{
+    margin-top: 55px;
+}
+
+.downloadBtn{
+  width: 17rem;
+}
+
+.upload{
+    width: 12rem;
+    height: 2.5rem;
+    color: #fff;
+    margin-right: 2rem;
+}

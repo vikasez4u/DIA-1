@@ -1,0 +1,63 @@
+.form-header{
+  flex-direction: row;
+  box-sizing: border-box;
+  background-color: #ADBDB6;
+  color: #061A1E;
+  height: 100%;
+  margin-top: 100px;
+  margin-left: 200px;
+  margin-right: -300px;
+  padding-left: 0px;
+  line-height: 50px;
+  vertical-align: middle;
+  font-size: 16px;
+  font-family: Segoe UI;
+  outline: 1px solid #ADBDB6;
+
+}
+
+.popup .modal-dialog {
+  max-width: 800px;
+  background-color: #ADBDB6;
+}
+
+
+.configuration-page {
+  display: flex;
+  height: 88vh;
+}
+
+.sidebar {
+  width: 13.7rem;
+  background: #f4f4f4;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar button {
+  background: none;
+  border: none;
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.sidebar button.active {
+  background: #981fae;
+  color: white;
+}
+
+.sidebar button:hover:not(.active) {
+  background: #f4e1f3;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background: #fff;
+}
+
+

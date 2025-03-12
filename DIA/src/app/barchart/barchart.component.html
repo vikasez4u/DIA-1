@@ -1,0 +1,26 @@
+<!--div class="content-container">
+<div class="tabs {{modelTextFlag? '': 'invisible'}}">
+  <div class="chart-container">
+        <canvas id="TextChart" #TextChart style="width:100%;max-width:675px;height:100%;max-height:385px">{{ textChart }}</canvas>
+        <canvas id="AltChart" #AltChart style="width:100%;max-width:675px;height:100%;max-height:385px">{{ textAltChart }}</canvas>
+  </div>
+
+  <div class="chart-container">
+        <canvas id="ImgChart" #ImgChart style="width:100%;max-width:675px;height:100%;max-height:385px">{{ textImgChart }}</canvas>
+  </div>
+</div>
+
+<div class="tabs {{modelImgFlag? '': 'invisible'}}">
+  <div class="chart-container">
+        <canvas id="ImgGenChart" #ImgGenChart style="width:100%;max-width:675px;height:100%;max-height:385px">{{ imageGenderChart }}</canvas>
+  </div>
+</div>
+</div-->
+
+<div class="content-container">
+  <div class="tabs">
+    <div class="chart-container">
+          <canvas id="Chart" #Chart>{{ Chart }}</canvas>
+    </div>
+  </div>
+</div>

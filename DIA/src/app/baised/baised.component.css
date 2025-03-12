@@ -1,0 +1,484 @@
+.header {
+  box-sizing: border-box;
+  flex-direction: row;
+  height: 80px;
+  z-index: 999;
+  background:white;
+  overflow:hidden;
+  width: 100%;
+}
+
+.heading {
+    font-size:4rem;
+}
+.apptitlecontainer{
+  color:black;
+  padding-left: 20px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 2;
+  font-family: Segoe UI;
+}
+
+.form-header{
+  flex-direction: row;
+  box-sizing: border-box;
+  background-color: #ADBDB6;
+  color: #061A1E;
+  height: 50px;
+  margin-top: 110px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 15px;
+  line-height: 50px;
+  vertical-align: middle;
+  font-size: 16px;
+  font-family: Segoe UI;
+  outline: 1px solid #ADBDB6;
+  text-align: center;
+}
+
+.note{
+  color: white;
+  display: inline;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: Tahoma;
+  padding-left: 80px;
+}
+
+label{
+  font-size: 15px;
+  font-weight: 500;
+  font-family: Tahoma;
+  color:black;
+  /*color: #F5FBEF;*/
+}
+
+.required-field:after{
+  content:" *";
+  color: red;
+  display:inline;
+}
+
+.panel-footer{
+  margin-top: 10px;
+}
+
+.pull-right{
+  float:right!important;
+}
+
+.btn-success{
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-primary{
+  background-color: #0073cf;
+  color: white;
+}
+
+html,body{
+
+    list-style: none;
+    font-family: 'Rubik';
+    letter-spacing: 3px;
+
+}
+
+.index{
+    background-image: url("src/assets/biased.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+.output{
+    background-image: url("src/assets/biased.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+}
+.cyan{
+    color : cyan
+}
+
+.center{
+ width: 430px;
+ margin: 130px auto;
+ position: relative;
+}
+
+.whitesmoke{
+    color : black
+}
+
+/* element */
+
+.let_space{
+    letter-spacing: 2px;
+}
+
+
+.c_grid{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 2vmax;
+}
+
+.grid{
+    display: grid;
+    grid-gap: 1vmax;
+    padding: 2.5rem;
+}
+
+.box2{
+    grid-template-columns: 1fr 1fr;
+}
+
+.box3{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* element */
+
+.table_cont{
+    overflow-x: scroll;
+    width: 70vw;
+}
+
+table {
+    border-collapse: collapse;
+    letter-spacing: 3px;
+    /* width: 100%; */
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 1vmax;
+    width: fit-content;
+}
+
+
+.form-outline{
+  outline: 1px solid #ADBDB6;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+input[type="text"]{
+    padding:1vmax;
+    border: 1px solid #5b5b5b;
+    outline: none;
+    color:purple;
+}
+
+input[type="text"]:focus{
+    padding:1vmax;
+    border: 3px solid purple;
+    box-shadow: 3px 3px 3px purple;
+}
+
+input[type="checkbox"]{
+border: 1px solid #5b5b5b;
+}
+
+
+select{
+    padding:1vmax;
+    border: 1px solid #dddddd;
+    outline: none;
+}
+
+
+.file_submit{
+  margin-top: 1vmax;
+  border: 1px solid #55acee;
+  outline: none;
+  background-color: white;
+  color: black;
+  padding: 1vmax;
+  cursor: pointer;
+  transition: 0.3s;
+  letter-spacing: 3px;
+}
+
+.file_submit:hover{
+  background-color: white;
+  color: black
+}
+
+/* HTML: <div class="loader"></div> */
+.loader1 .btn-success:active {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  margin: -56px 0 0 -56px;
+  display: flex;
+  color: whitesmoke;
+  background:
+    linear-gradient(currentColor 0 0) right  /51% 100%,
+    linear-gradient(currentColor 0 0) bottom /100% 51%;
+  background-repeat: no-repeat;
+  animation: l17-0 2s infinite linear .25s;
+}
+.loader1::before{
+  content:"";
+  width: 50%;
+  height: 50%;
+  background: currentColor;
+  transform-origin: 10% 10%;
+  animation: l17-1 .5s infinite linear;
+}
+@keyframes l17-0 {
+  0%   ,12.49% {transform: rotate(0deg)}
+  12.5%,37.49% {transform: rotate(90deg)}
+  37.5%,62.49% {transform: rotate(180deg)}
+  62.5%,87.49% {transform: rotate(270deg)}
+  87.5%,100%   {transform: rotate(360deg)}
+}
+@keyframes l17-1 {
+  0%      {transform: perspective(80px) rotate3d(-1,1,0, 0)}
+  80%,100%{transform: perspective(80px) rotate3d(-1,1,0,-360deg)}
+}
+.animate p .btn-success:active{
+  position: absolute;
+  text-align: center;
+  top: 57%;
+  left: 39%;
+  margin: -50px 0 0 -50px;
+  display: flex;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6;
+  font-family: Segoe UI;
+}
+
+.loader {
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  position: relative;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  }
+
+  /* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loadertext {
+color:white;
+}
+  #submit{
+    margin-top: 1vmax;
+    outline: none;
+    background-color: #28a745;
+    color: white;
+    padding: 1vmax;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family:Segoe UI;
+  }
+
+  .submit:hover{
+    background-color: white;
+    color: black
+  }
+
+.body-footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  margin-top: 110px;
+  height: 40px;
+  background-color: #061A1E;
+}
+
+.body-footer-text{
+  color: #F5FBEF;
+  padding-right: 20px;
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+.col {
+  float: left;
+  width: 30%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* New CSS */
+.logoContainer{
+    width: 226px;
+    padding: 0 0 0 19px;
+    font-size: 16px;
+    font-family: Graphik Black;
+    line-height: 51px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #2e2e2e;
+    cursor: pointer;
+}
+
+#content{
+    /*height: 33rem;*/
+    height: 100vh;
+    max-height: 45rem;
+    background-color: purple;
+    background-image: linear-gradient(to right, rebeccapurple, purple);
+}
+
+#subContent{
+ height: auto;
+ background-color: #fff;
+}
+
+.rightContent{
+  background-color: #fff;
+  margin-top: 8rem;
+  margin-right: 50px;
+  /*height:85%;*/
+  border-radius: 15px;
+}
+
+.leftContent{
+    margin-top: 8rem;
+    margin-left: 5rem;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+}
+
+.startBtn{
+margin-right:10px;
+}
+
+.videoBtn{
+margin-right:10px;
+color:white;
+}
+
+.successBtn{
+margin-right:10px;
+}
+
+.resetBtn{
+margin-right:10px;
+}
+
+.reset{
+background-color:purple;
+color:white;
+}
+
+.subCategory{
+margin-top:20px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+.card {
+  width: 21rem;
+  height: 21rem;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ffcccc, #ff99cc);
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card-header {
+  background: #981fae;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 21rem;
+}
+.card-header .i {
+  font-size: 1.5rem;
+}
+.card-body {
+  padding: 15px;
+  text-align: center;
+  background: #f4e1f3;
+  border-radius: 0 0 10px 10px;
+    width: 21rem;
+}
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 13rem;
+}
+
+
+.leftContent, .rightContent {
+ /* padding: 20px;*/
+}
+
+.startBtn, .videoBtn, .successBtn, .resetBtn {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 992px) {
+  .leftContent, .rightContent {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+    .leftContent {
+    text-align: center;
+  }
+
+  #subContent{
+      height: auto;
+ }
+
+}

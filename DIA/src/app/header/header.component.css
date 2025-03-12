@@ -1,0 +1,244 @@
+.app-header{
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-color: #fff;
+    border-bottom: 2px solid #6c15b6;
+    /*display: flex;*/
+    z-index: 1001;
+    transition: transform .2s ease;
+}
+/*.app-container{
+   padding-left: 4.75rem;
+    padding-right: 4.75rem;
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}*/
+.app-header-main, .app-header-items{
+    display: flex;
+    align-items: center;
+}
+.app-header-items{
+    padding-bottom: 0;
+    height: 100%;
+}
+.app-header-items img{
+    height: 1.5rem;
+    width: auto;
+}
+.app-header-title{
+    font-size: .875rem;
+    font-weight: 700;
+    color: #222;
+    display: inline-block;
+    max-width: 14rem;
+    border: 0;
+    position: relative;
+    padding-left: 2.25rem;
+    margin: 0 .625rem 0 1.625rem;
+    text-decoration: none;
+    background-color: transparent;
+}
+.app-header-title:before{
+    position: absolute;
+    content: "";
+    left: 0;
+    height: 80%;
+    width: 0;
+    border-left: 1.5px solid #5a5a5a;
+}
+
+.navbar {
+ /* left: 35px;
+  display: inline-flex;
+  align-items: center;
+  margin-left: auto;*/
+  display:content;
+  white-space: normal;
+  height: 40px;
+  z-index: 1;
+}
+
+.navbar .nav-btn {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: .24px;
+  padding: 10px 15px 7px;
+  float: left;
+  margin: 0 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-family: Graphik Medium, Graphik;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar .nav-btn{
+  color: #575757;
+}
+
+.nav-tab .nav-btn:hover {
+  background: #eed4fd;
+}
+
+.navbar .nav-tab .active {
+  color: white;
+  background-color: #981fae;
+}
+
+.fa-house-chimney.active,
+.fa-people-group.active,
+.fa-gears.active,
+.fa-circle-question.active
+.fa-headset.active{
+  color: white;
+}
+
+.nav-tab .active{
+  padding: 10px 15px 7px;
+}
+
+
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  border-top: 2px solid #6c15b6;
+  display: flex;
+  z-index: 1001;
+  transition: transform .2s ease;
+  height: 51px;
+  background-color: #fff;
+}
+.footer-text{
+  font-size: .875rem;
+  font-weight: 500;
+  display: inline-block;
+  max-width: 55rem;
+  border: 0;
+  position: relative;
+  color: #222;
+  padding-right: 20px;
+  padding-left: 600px;
+  padding-top: 6px;
+  line-height: 40px;
+  text-align: right;
+}
+
+/*New css*/
+img{
+    height: 1.5rem;
+    width: auto;
+    margin: 3px 3px 14px 10px;
+    padding: 0 15px;
+}
+
+.nav-item .active{
+  padding: 10px 15px 7px;
+}
+
+.navbar .nav-link{
+  color: #575757;
+}
+
+.nav-item .nav-link:hover {
+  background: #eed4fd;
+}
+
+.navbar .nav-item .active {
+  color: white;
+  background-color: #981fae;
+}
+
+
+.navbar .nav-link {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: .24px;
+  padding: 10px 15px 7px;
+  float: left;
+  margin: 0 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  font-family: Graphik Medium, Graphik;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar .nav-link{
+  color: #575757;
+}
+
+.nav-item .nav-link:hover {
+  background: #eed4fd;
+}
+
+.navbar .nav-item .active {
+  color: white;
+  background-color: #981fae;
+}
+
+ul.navbar-nav {
+  /*  margin-left: 20rem;*/
+}
+
+.navbar-toggler-icon {
+    width: 1.0em;
+    height: 1.0em;
+}
+
+
+@media (max-width: 576px) {
+  .nav-item a {
+    float: none;
+    display: block;
+    text-align: left;
+    background:#fff;
+    width:100%;
+  }
+  .app-header-title{
+        font-size:11.625px;
+  }
+
+  .app-header-title:before{
+          display:inline-block;
+    }
+
+.app-container{
+    padding-left: 0rem;
+    padding-right: 0rem;
+    width: 100%;
+    max-width: 576px;
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+
+.navbar .container-fluid {
+  width:100%;
+  left: 10px;
+}
+
+.navbar-toggler-icon{
+  display:inline-block;
+}
+
+.navbar{
+    left:0px;
+    display: inline-flex;
+    align-items: center;
+    margin-left: auto;
+    height: 40px;
+}
+  }
+
+div#collapsibleNavbar {
+    justify-content: end;
+}
+
+
