@@ -5,14 +5,14 @@ import shutil
 
 CURRENT_DIRECTORY = os.getcwd()
 directories = os.listdir(CURRENT_DIRECTORY)
-NON_ANGULAR_DIRS = ['resources','static', 'templates', 'weights', 'venv', 'env', '__pycache__','uploads','DIA2']
+NON_ANGULAR_DIRS = ['resources','static', 'templates', 'weights', 'venv', 'env', '__pycache__','uploads','DIA2','.github']
 ANGULAR_PROJECT_PATH = ""
 DIST_PATH = ""
 DIST_ASSETS_PATH = ""
 
 for directory in directories:
     if "." not in directory and directory not in NON_ANGULAR_DIRS:
-        ANGULAR_PROJECT_PATH = os.path.join(CURRENT_DIRECTORY, directory)
+        ANGULAR_PROJECT_PATH = CURRENT_DIRECTORY
         DIST_PATH = os.path.join(ANGULAR_PROJECT_PATH, 'dist', directory)
         DIST_ASSETS_PATH = os.path.join(DIST_PATH, 'assets')
 FLASK_STATIC_PATH = os.path.join(CURRENT_DIRECTORY, 'static')
