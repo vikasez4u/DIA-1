@@ -28,6 +28,7 @@ if dir_exists:
           os.remove(os.path.join(FLASK_STATIC_PATH, f))
         print('Begin Transferring files')
         files = os.listdir(DIST_PATH)
+        print('files',files)
         static_files = ""
         html_files = ""
         for file in files:
