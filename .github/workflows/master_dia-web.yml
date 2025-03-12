@@ -50,7 +50,7 @@ jobs:
   
       - name: Build Angular project
         #run: python build-dev.py
-        run: ng build --base-href /static/ --output-hashing=all
+        run: ng build --configuration production
         working-directory: ./DIA
 
       - name: Set up Python
